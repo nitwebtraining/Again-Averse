@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #5A76FF;
+    --secondary-color: #D589DD;
+    --text-color: #4F4F4F;
+    --text-color-white: #FFFFFF;
+    --heading-color: #090F32;
+    --background-color: #FFFFFF;
+    --background-color-alt: #f3f7f8;
+    --accent-color: #1890FF;
+    --heading-font: 'Lora', serif;
+    --body-font: 'Plus Jakarta Sans', sans-serif;
+    --font-family-sans: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    font-family: "Lora", serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #1890ff;
+    transition: underline 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+
+
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+}
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-menu li a {
+    font-weight: 500;
+    color: var(--heading-color);
+    transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: var(--primary-color);
+}
+
+.menu-icon {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    padding: 0.5rem;
+    color: #fff !important;
+}
+
+.logo img {
+    height: 40px;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('../images/hero-bg.png') no-repeat center center/cover;
+    text-align: center;
+}
+
+.hero .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 3rem;
+}
+
+.hero .hero-text {
+    flex: 1;
+    text-align: left;
+}
+
+.hero .hero-text p {
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.hero .hero-text h1 {
+    font-size: 2.8rem;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    margin-bottom: 2rem;
+}
+
+.hero .hero-image {
+    flex: 1;
+    text-align: right;
+    margin-top: 5rem;
+    margin-left: 5rem;
+}
+
+.hero .hero-image img {
+    max-width: 100%;
+    height: auto;
+}
