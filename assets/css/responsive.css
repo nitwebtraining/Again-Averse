@@ -1,0 +1,178 @@
+/* Default: Left sidebar */
+.sidebar-wrap {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 280px;
+    height: 100vh;
+    background: #fff;
+    color: #fff;
+    -webkit-box-shadow: -5px 0 20px -5px rgba(0, 0, 0, .5);
+    box-shadow: -5px 0 20px -5px rgba(0, 0, 0, .5);
+    -webkit-transition: .5s ease-out;
+    transition: .5s ease-out;
+    overflow-y: auto;
+    z-index: 10001;
+}
+
+.sidebar-wrap.active {
+    left: 0;
+}
+
+/* Sidebar Header (logo + close button in one row) */
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-logo img {
+    width: 150px;
+    max-height: 40px;
+}
+
+.menu-icon-wrap {
+    display: none;
+}
+
+
+.sidebar-close-btn {
+    font-size: 22px;
+    cursor: pointer;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.sidebar-close-btn:hover {
+    color: var(--secondary-color);
+}
+
+
+/* Sidebar Navigation */
+.sidebar-nav {
+    list-style: none;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.sidebar-nav li {
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+    border-top: 1px solid #ebebeb !important;
+}
+
+.sidebar-nav li:last-child {
+    border-bottom: none;
+}
+
+.sidebar-nav a {
+    display: block;
+    padding: 12px 20px;
+    color: #090F32;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.sidebar-nav a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    padding-left: 25px;
+    color: var(--primary-color);
+
+}
+
+.contact-info {
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info li {
+    color: #090F32;
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    margin-right: 8px;
+    color: var(--primary-color);
+}
+
+
+.social-icon {
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.social-icon ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.social-icon a {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--heading-color);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon a:hover {
+    background: #5A76FF;
+    color: #fff;
+}
+
+
+/* Close Button */
+.sidebar-close-btn {
+    font-size: 22px;
+    cursor: pointer;
+    color: #111827;
+    text-align: right;
+    padding: 15px;
+}
+
+/* Overlay */
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease;
+    z-index: 10000;
+}
+
+.sidebar-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Mobile menu icon */
+.menu-icon {
+    font-size: 22px;
+    cursor: pointer;
+}
