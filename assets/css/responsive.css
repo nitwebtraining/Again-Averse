@@ -176,3 +176,46 @@
     font-size: 22px;
     cursor: pointer;
 }
+
+/* responsive */
+
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .menu-icon-wrap {
+        display: block;
+    }
+
+    .hero .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero .hero-text {
+        text-align: center;
+    }
+
+    .hero .hero-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero .hero-text p {
+        font-size: 0.95rem;
+    }
+
+    .hero .hero-image {
+        margin: 2rem 0 0 0;
+        text-align: center;
+    }
+
+    .skill-progress-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-progress-header p {
+        text-align: center;
+    }
+}
